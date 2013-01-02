@@ -16,6 +16,7 @@ Gem::Specification.new do |gem|
 
   %w[
      working
+     pry-rail
      better_errors
   ].each do |dep| gem.add_dependency dep end
 end

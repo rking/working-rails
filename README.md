@@ -7,6 +7,7 @@ Whoa!! ☈king's opinionated rig for Rails dev.
 - Plus the normally-odd ones (TODO: list these)
 - Spork in effect for faster runs
 - `charliesome/better_errors`, because they're better
+- `pry-rails` for super-fast `show-routes`, etc.
 
 ## Example uses:
 
