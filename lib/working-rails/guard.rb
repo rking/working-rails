@@ -30,7 +30,6 @@ Guard::Dsl.new.instance_eval do
     end
 
     watch %r(^app/controllers/(.+)_controller.rb) do |m|
-      warn "HERE"
       warn (controller_tests_for m[1]).inspect
       controller_tests_for m[1]
     end
