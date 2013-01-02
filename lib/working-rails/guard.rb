@@ -24,8 +24,10 @@ Guard::Dsl.new.instance_eval do
       end
     end
 
+    require 'active_support/core_ext'
+    require 'active_support/inflector/inflections'
     watch %r|^app/models/(.+).rb| do |m|
-      plural = m[1]+'s' # TODO: proper Inflection
+      plural = m[1].pluralize
       [ "test/unit/#{m[1]}_test.rb" ] + controller_tests_for(plural)
     end
 
