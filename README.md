@@ -6,6 +6,7 @@ Whoa!! ☈king's opinionated rig for Rails dev.
 - 1:1 mapping between stuff in `lib/` or `app/` and the `test/` dirs.
 - Plus the normally-odd ones (TODO: list these)
 - Spork in effect for faster runs
+- `charliesome/better_errors`, because they're better
 
 ## Example uses:
 
