@@ -1,4 +1,4 @@
-# Working
+= Working
 
 Whoa!! ☈king's opinionated rig for Rails dev.
 
@@ -7,13 +7,14 @@ Whoa!! ☈king's opinionated rig for Rails dev.
 - Plus the normally-odd ones (TODO: list these)
 - Spork in effect for faster runs
 - `charliesome/better_errors`, because they're better
+- `evrone/quiet_assets`, because the asset requests are, generally, noise
 - `pry-rails` for super-fast `show-routes`, etc.
 
-## Example uses:
+== Example uses:
 
 - https://github.com/rking/monkeynote
 
-## Installation
+== Installation
 
 Add this line to your application's Gemfile:
 
@@ -23,8 +24,10 @@ And then execute:
 
     bundle
     working-init # this tinkers with several files (verbosely)
-    # Note: the working-init-rails script is TODO
 
-## TODO
+Note: the working-init-rails script is TODO. Basically you use
+'working-rails/___' in a few places instead of 'working/___'
+
+== TODO
 
 Explain the parts.

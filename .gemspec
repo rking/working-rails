@@ -18,5 +18,6 @@ Gem::Specification.new do |gem|
      working
      pry-rails
      better_errors
+     quiet_assets
   ].each do |dep| gem.add_dependency dep end
 end
