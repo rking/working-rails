@@ -1,1 +1,1 @@
-# noop
+require 'better_errors'
