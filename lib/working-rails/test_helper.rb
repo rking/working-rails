@@ -13,13 +13,11 @@ unless respond_to? :reload!
   end
 end
 
-class ActiveSupport::TestCase
-  # Setup all fixtures in test/fixtures/*.(yml|csv) for all tests in alphabetical order.
-  #
-  # Note: You'll currently still have to declare fixtures explicitly in integration tests
-  # -- they do not yet inherit this setting
-  fixtures :all
-
-  # Add more helper methods to be used by all tests here...
+# If these are run before the fork, then they will very likely trigger a
+# pre-fork load of the code that you end up wanting to test. Instead, we do it
+# only on each_run
+Spork.each_run do
+  class ActiveSupport::TestCase
+    fixtures :all
+  end
 end
-
